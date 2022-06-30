@@ -1,0 +1,205 @@
+.footer {
+  background-color: #2f303a;
+  padding: 60px 0;
+  .footer__container {
+    display: block;
+    // align-items: baseline;
+    @include mq(desc) {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+  }
+  .footer__address {
+    font-size: 14px;
+    font-style: inherit;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--main-white);
+    margin-top: 20px;
+    @include mq(mob-only) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .footer__contact-info {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--footer-contacts);
+    margin-top: 9px;
+    transition: var(--transition);
+    transition-property: color;
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  .footer__info {
+    margin-right: 70px;
+    text-align: center;
+    width: 100%;
+    @include mq(tab) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 60px;
+    }
+    @include mq(desc) {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: baseline;
+      margin-bottom: 0;
+    }
+  }
+
+  .footer__item {
+    margin-top: 60px;
+    @include mq(tab) {
+    }
+  }
+
+  .footer__soc-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+  }
+  .footer__soc-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    @include mq(tab) {
+    }
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .footer__soc-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: #ffffff;
+    transition: var(--transition);
+    transition-property: fill;
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+  &__soc-item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+// .footer {
+//     background-color: #2F303A;
+//     padding: 60px 0;
+// }
+
+// .address {
+//     font-size: 14px;
+//     font-style: inherit;
+//     line-height: 1.7;
+//     letter-spacing: 0.03em;
+//     color: var(--main-white);
+//     margin-top: 20px;
+// }
+
+// .contact-info {
+//     display: block;
+//     font-size: 14px;
+//     line-height: 1.7;
+//     letter-spacing: 0.03em;
+//     color: var(--footer-contacts);
+//     margin-top: 9px;
+//     transition: var(--transition);
+//     transition-property: var(--accent-color);
+// }
+
+// .footer-container {
+//     display: flex;
+//     align-items: baseline;
+
+// }
+
+// .footer-item:first-child {
+//     margin-right: 70px;
+// }
+
+// .footer-soc-text {
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.03em;
+
+//     text-transform: uppercase;
+//     color: #FFFFFF;
+// }
+
+// .footer-soc-list {
+//     display: flex;
+//     justify-content: center;
+//     margin-top: 20px;
+// }
+
+// .footer-soc-link {
+//     width: 44px;
+//     height: 44px;
+//     border-radius: 50%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     background-color: rgba(255, 255, 255, 0.1);
+//     fill: #FFFFFF;
+//     transition: var(--transition);
+//     transition-property: var(--accent-color);
+// }
+
+// .footer-soc-link:hover,
+// .footer-soc-link:focus {
+//     background-color: var(--accent-color)
+// }
+
+// .footer-soc-item:not(:last-child) {
+//     margin-right: 10px;
+// }
+
+// .distribution-title {
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.03em;
+//     margin-bottom: 20px;
+//     text-transform: uppercase;
+//     color: var(--main-white);
+// }
+
+// .subscribe {
+//     background-color: #2F303A;
+//     min-width: 358px;
+//     height: 50px;
+//     border: 1px solid rgba(255, 255, 255, 0.3);
+//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//     border-radius: 4px;
+// }
+
+// .subscribe::placeholder {
+//     font-weight: 400;
+//     font-size: 16px;
+//     line-height: 1.25;
+//     letter-spacing: 0.03em;
+//     padding-left: 16px;
+//     color: rgba(255, 255, 255, 0.6);
+// }

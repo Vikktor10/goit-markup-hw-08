@@ -1,0 +1,47 @@
+.form {
+  margin-top: 60px;
+  @include mq(desc) {
+    display: flex;
+    align-items: flex-end;
+  }
+  .form__label {
+    @include mq(desc) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 93px;
+      margin-right: 12px;
+    }
+  }
+  .form__icon {
+    margin-left: 10px;
+    fill: var(--main-white);
+  }
+  .form__distribution-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: var(--main-white);
+  }
+
+  .form__subscribe {
+    background-color: #2f303a;
+    min-width: 450px;
+    height: 50px;
+    padding: 15px 16px;
+    color: var(--main-white);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    &::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+}

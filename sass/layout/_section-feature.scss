@@ -1,0 +1,77 @@
+.feature {
+  &__list {
+    @include mq(tab) {
+      --card-item: 2;
+    }
+    @include mq(desc) {
+      --card-item: 4;
+    }
+  }
+  &__item {
+  }
+  &__picture {
+    height: 120px;
+    margin-bottom: 30px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-color);
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  &__word {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  }
+}
+
+// .feature-picture {
+//   width: 270px;
+//   height: 120px;
+//   margin-bottom: 30px;
+//   background: #f5f4fa;
+//   border-radius: 4px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// .feature.item:not(:last-child) {
+//   margin-right: 30px;
+// }
+
+// .feature .title {
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 1.2;
+//   letter-spacing: 0.03em;
+//   text-transform: uppercase;
+//   color: var(--title-color);
+//   margin-top: 0;
+//   margin-bottom: 10px;
+// }
+
+// .feature > .item {
+//   width: 270px;
+// }
+
+// .feature-list {
+//   justify-content: center;
+//   display: flex;
+// }
+
+// .word {
+//   font-size: 14px;
+//   line-height: 1.7;
+//   letter-spacing: 0.03em;
+// }
